@@ -9,6 +9,7 @@ import SignUp from "./Component/SignUp";
 import Delete from "./Component/Delete"
 import Projectdashboard from "./Component/Projectdashboard";
 import DragComponent from "./Component/DragComponent";
+import Home from "./Component/Home";
 
 function App() {
     return (
@@ -18,9 +19,10 @@ function App() {
                     {/*<Navbar/>*/}
                     <Header/>
                     <Switch>
+                        <Route path="/home" component={Home}></Route>
                         <Route path="/signup" component={SignUp}></Route>
                         <Route path="/login" component={SignIn}></Route>
-                        {/*<Route path="/dashboard" component={Delete}></Route>*/}
+                        <Route path="/dashboard" component={Projectdashboard}></Route>
                         {/*<Route path="/drag" component={DragComponent}></Route>*/}
                         {/*<Route path="/dr" component={Drag}></Route>*/}
                         {/*<Car/>*/}
