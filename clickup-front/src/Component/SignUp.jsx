@@ -60,10 +60,15 @@ class SignUp extends Component {
         // console.log('user =>' + JSON.stringify(user));
         RegUserService.addUser(user).then(res => {
             // localStorage.setItem('clickToken', 'Bearer '+JSON.stringify(res.data))
-            this.props.history.push('/login')
-            alert("go to login");
+            this.props.history.push('/dashboard')
+            // alert("go to login");
             console.log(res);
         })
+    }
+
+    cancel=(e)=>{
+        this.props.history.push('/home')
+
     }
 
     // componentDidMount(e) {
@@ -117,11 +122,11 @@ class SignUp extends Component {
 
                                 </div>
 
-                                <button className="btn btn-success">
+                                <button className="btn btn-success" onClick={this.saveUser}>
                                     Sign In
                                 </button>
 
-                                <button className="btn btn-danger" onClick={this.saveUser}>
+                                <button className="btn btn-danger"onClick={this.cancel} >
                                     Cancel
                                 </button>
 
