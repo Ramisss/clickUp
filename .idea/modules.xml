@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/click-securit-third/click-security.iml" filepath="$PROJECT_DIR$/click-securit-third/click-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clickup-front/clickup-front.iml" filepath="$PROJECT_DIR$/clickup-front/clickup-front.iml" />
+    </modules>
+  </component>
+</project>

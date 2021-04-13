@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+.Delete {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.Delete .column {
+    width: 29%;
+}
+
+.droppable-col {
+    width: 100%;
+    background-color: gray;
+    padding: 20px 20px 0 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    margin-bottom: 10px;
+    background-color: gray;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.item.dragging {
+    background-color: coral;
+}
+
+.task__add{
+    display: compact;
+    margin: 20px;
+
+}
