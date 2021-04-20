@@ -19,7 +19,7 @@ function App() {
                     {/*<Navbar/>*/}
                     <Header/>
                     <Switch>
-                        <Route path="" component={Home}></Route>
+                        <Route path="/home" component={Home}></Route>
                         <Route path="/signup" component={SignUp}></Route>
                         <Route path="/login" component={SignIn}></Route>
                         <Route path="/dashboard" component={Projectdashboard}></Route>

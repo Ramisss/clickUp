@@ -14,7 +14,7 @@ class Header extends Component {
     render() {
         return (
             <div id="mySidenav" className="sidenav">
-                <a href="/home" id="about">Home</a>
+                <a href="/" id="about">Home</a>
                 <a href="/signUp" id="blog">Sign up</a>
                 <a href="/login" id="projects">Sign in</a>
                 <a href="#" id="contact">About</a>
