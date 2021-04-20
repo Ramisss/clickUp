@@ -59,7 +59,7 @@ class SignUp extends Component {
         }
         // console.log('user =>' + JSON.stringify(user));
         RegUserService.addUser(user).then(res => {
-            // localStorage.setItem('clickToken', 'Bearer '+JSON.stringify(res.data))
+            localStorage.setItem('clickToken', 'Bearer '+JSON.stringify(res.data))
             this.props.history.push('/dashboard')
             // alert("go to login");
             console.log(res);

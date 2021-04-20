@@ -24,7 +24,7 @@ class Projectdashboard extends Component {
 
     componentDidMount() {
         if (!localStorage.getItem(TOKEN)) {
-            this.props.history.push('/home')
+            this.props.history.push('/dashboard')
             // console.log(api)
         } else {
             this.getProjects()
